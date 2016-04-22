@@ -1,8 +1,161 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title> Manny Lazalde </title>
+  <title> CalSol </title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <script src="assets/js/script.js"></script>
 </head>
 <body>
-  <div>This is the first and one of first github pages!</div>
+  <section class = "section" id = "introduction-section">
+    <div> <img id = "calsol_car_welcome" src = "assets/jpg/calsol.jpg" > </div>
+  <div class = "navigation">
+
+      <ul>
+        <li class = "navigation-item1"> CalSol </li>
+        <li class = "navigation-item" href = "#introduction-section"><a> Welcome </a> </li>
+        <li class = "navigation-item" href = "#solar_car-section"><a> Solar Cars </a> </li>
+        <li class = "navigation-item" href = "#race-section"><a> Race </a> </li>
+        <li class = "navigation-item" href = "#team_members-section"><a> Team Members </a> </li>
+        <li class = "navigation-item" href = "#subgroups-section"><a> Subgroups </a> </li>
+        <li class = "navigation-item" href = "#sponsers-section"><a> Sponsors </a> </li>
+        <a href = "https://www.facebook.com/BerkeleyCalSol/?fref=ts" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/facebook.png"> </li></a>
+        <a href = "https://twitter.com/search?q=berkeley%20calsol&src=typd&lang=en" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/twitter.png"> </li></a>
+        <a href = "https://www.instagram.com/berkeleycalsol/" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/instagram.png"> </li></a>
+        <a href = "https://www.youtube.com/user/BerkeleyCalSol" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/youtube.png"> </li></a>
+        <a href = "https://www.flickr.com/photos/calsol/20928724946/in/photostream/" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/pictures.png"> </li></a>
+      </ul>
+
+   </div>
+
+  <div id = "title"> CalSol </div>
+  <div id = "subtitle"> UC Berkeley's Solar Vehicle Team </div>
+
+
+</section>
+<section class = "section" id ="solar_car-section">
+  <div class = "carousel-container">
+  <div class = "carousel">
+    <div class = "carousel-item"><div class ="zephr" > <img id = "zephr" src = "assets/jpg/zephr.jpg"></div>
+    <div class = "summary_zephr">
+      Zephyr is CalSol's 8th-generation solar vehicle. We are working on making Zephyr the best car CalSol has ever made, even greater than Impulse!
+    </div>
+    <div class = "title-text"> Zephyr </div></div>
+    <div class = "carousel-item"><div class ="impulse" ><img id = "cars" src = "assets/jpg/impulse.jpg"></div>
+    <div class = "summary_impulse">
+      Impulse is our best car yet! We took Impulse to the 2011 World Solar Challenge in Australia in October 2011, and achieved 20th out of 37 teams. We then took it to the 2012 American Solar Challenge from New York to Minnesota and achieved a record-breaking 4th place overall! Please continue to support us by donating today to help us cover the cost of the race!
+    </div>
+      <div class = "title-text"> Impulse </div>
+      </div>
+    <div class = "carousel-item"><div class ="goldrush" > <img id = "cars" src = "assets/jpg/goldrush.jpg"></div>
+    <div class = "summary_goldrush">
+        As required, GoldRush features an upright seating arrangement and a traditional steering wheel, making the driving experience more similar to that of a standard car (and a lot more comfortable!). The shell is made of Kevlar and Nomex honeycomb, with a Chromoly Steel Chassis. GoldRush is the first CalSol car since Afterburner II (with Stanford) to feature a three wheel design. GoldRush rayced in the Formula Sun Grand Prix 2009.
+    </div>
+      <div class = "title-text"> Goldrush </div>
+  </div>
+    <div class = "carousel-item"><div id ="video"> <video width="480" autoplay muted loop> <source src= "assets/jpg/CalSol.mp4" type="video/mp4">
+    </video> </div>  <div class = "summary_video">
+        Here is a video of our current two cars racing with each other at
+        Richmond Field Station!Click on the picture link in the navigation bar
+        to see more videos and images of our cars in action. We will also post more
+        videos on that link during our the ASC Race across America this summer.
+        Stay tuned!
+    </div> <div class = "title-text">Impulse and Zephyr </div></div>
+  </div></div>
+  <div id = "carousel-prev"> <img class = "arrow" src="assets/jpg/arrow_left.png"></div>
+  <div id = "carousel-next"> <img class = "arrow" src="assets/jpg/arrow_right.png"></div>
+</section>
+
+<section class = "section" id = "race-section">
+  <div id = "race-title"> American Solar Challenge</div>
+  <div id = "solar_car_div"> <img id = "solar_car" src = "assets/jpg/solar_car.png"> </div>
+  <div id ="map"> <div>
+  <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+          center: {lat: 42.540, lng: -88.546},
+          zoom: 4,
+          //mapTypeId: google.maps.MapTypeId.HYBRID
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:41.3206972,lng:-81.5941322},
+          map:map,
+          title:"Start of ASC Race!"
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:40.2845779,lng:-96.8245257},
+          map:map,
+          title:"Rest Point!"
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:37.1161961,lng:-93.4089881},
+          map:map,
+          title:"Midpoint!"
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:38.6774124,lng:-87.5384055},
+          map:map,
+          title:"Rest Point!"
+        });
+        var marker = new google.maps.Marker({
+          position:{lat:40.2845779,lng:-96.8245257},
+          map:map,
+          title:"Rest Point!"
+        });
+          var marker = new google.maps.Marker({
+            position:{lat:43.4319439,lng:-103.4761734},
+            map:map,
+            title:"End of ASC Race!"
+        });
+        var line = new google.maps.Polyline({
+        path: [
+
+            new google.maps.LatLng(43.4319439, -103.4761734),
+            new google.maps.LatLng(40.2845779, -96.8245257),
+            new google.maps.LatLng(37.1161961, -93.4089881),
+            new google.maps.LatLng(38.6774124, -87.5384055),
+            new google.maps.LatLng(41.3206972, -81.5941322)
+        ],
+        strokeColor: "#1565c0",
+        strokeOpacity: 1.0,
+        strokeWeight: 4,
+        map: map
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBxAdnh9S2Pl5qqlvGyoe3-i1MHdboIZ2s&callback=initMap"
+        async defer></script>
+</section>
+
+<section class = "section" id = "team_members-section">
+ <div> team_members-section</div>
+ <div class= "subteam_images"><img id = "calsol_business" src="assets/jpg/Machining.jpg"></div>
+</section>
+
+
+<section class = "section" id = "subgroups-section">
+<div> subgroups-section</div>
+
+<div class= "subteam_images"><img id = "calsol_mechanical" src="assets/jpg/calsol_mechanical.jpg"></div>
+<div class= "subteam_images"><img id = "calsol_electrical" src="assets/jpg/welding.jpg"></div>
+<div class= "subteam_images"><img id = "calsol_business" src="assets/jpg/operations.jpg"></div>
+</section>
+
+
+<section class = "section" id="sponsers-section">
+  <div> sponsers-section</div>
+  <div class = "sponser-rank"> Platinum </div>
+  <img id ="volkswagon" src = "assets/jpg/volkswagon.png">
+  <img id  ="lineartechnology" src = "assets/jpg/lineartechnology.png">
+  <img class ="sponser" src = "assets/jpg/advanced_circuits.png">
+  <img class ="sponser" src = "assets/jpg/solidworks.png">
+  <img class ="sponser" src = "assets/jpg/kreys.png">
+  <img class ="sponser" src = "assets/jpg/sunpower.png">
+</section>
+
+
+
 </body>
 </html>

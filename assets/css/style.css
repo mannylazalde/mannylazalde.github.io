@@ -1,0 +1,288 @@
+body{
+  font-family: 'Monda', sans-serif;
+  margin:0px;
+  margin-top:0px;
+}
+a{
+  text-decoration:none;
+  color:inherit;
+}
+/* navigation bar css */
+.navigation{
+  position:fixed;
+  width:100%;
+  height:46px;
+  z-index:100;
+  background:white;
+  opacity:0.8;
+  top:0px;
+}
+.navigation ul{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+
+.navigation-item{
+  padding:10px;
+  color:black;
+  margin-right:20px;
+  float:left;
+}
+.navigation-item1{
+  padding:1px;
+  color:#1565c0;
+  margin-left:10px;
+  margin-right:10px;
+  padding-top:3px;
+  float:left;
+  font-size: 25px ;
+  font-weight:bold;
+}
+.navigation-item:hover{
+background:grey;
+transition: all 0.5s;
+cursor:pointer;
+}
+.social_media{
+  padding:10px;
+  padding-top:10px;
+  color:black;
+  margin-right:25px;
+  float:right;
+}
+.social_media:hover{
+background:grey;
+transition: all 0.5s;
+cursor:pointer;
+}
+#instagram{
+  height:25px;
+}
+/* introduction-section css*/
+#introduction-section{
+  overflow:hidden;
+  height:100vh;
+}
+#title{
+  font-size:90px;
+  letter-spacing:15px;
+  text-align:center;
+  position:absolute;
+  top:36%;
+  left:50%;
+  transform: translate(-50%,-130%);
+  color:white;
+  z-index:5;
+}
+#subtitle{
+  font-size:25px;
+  letter-spacing:1px;
+  text-align:center;
+  top:36%;
+  left:50%;
+  transform: translate(-50%,-560%);
+  color:white;
+  z-index:6;
+  position:absolute;
+}
+
+#calsol_car_welcome{
+  width:100%;
+  min-width:990px;
+  z-index:1;
+}
+
+/* Solar Car Section*/
+#solar_car-section{
+  overflow:hidden;
+  height:100vh;
+  background:#e3f2fd;
+}
+.carousel-container{
+	width:960px;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	margin:auto;
+  background:#e3f2fd;
+}
+.carousel{
+  width:4800px;
+	height:100%;
+	margin-left:0px;
+	-webkit-transition:all 0.3s;
+}
+.carousel-item{
+  width:960px;
+	position:relative;
+	height:100%;
+	float:left;
+}
+.title-text{
+font-size:60px;
+text-align: center;
+background-color: white;
+color:#1565c0;
+}
+.arrow{
+  height:75px;
+}
+#carousel-prev:hover{
+  cursor:pointer;
+}
+#carousel-next:hover{
+  cursor:pointer;
+}
+#carousel-prev{
+  position:absolute;
+  top:150%;
+  margin-left:30px;
+}
+#carousel-next{
+  position:absolute;
+  top:150%;
+  right:0%;
+  margin-right:30px;
+}
+#zephr{
+  padding:10px;
+  background-color:#e3f2fd;
+  height:275px;
+}
+.summary_zephr{
+  float:right;
+  padding:5px;
+  background:#e3f2fd;
+  width:300px;
+  margin-right:5%;
+  margin-top:15%;
+  text-align:justify;
+}
+.summary_impulse{
+  float:right;
+  padding:5px;
+  background:#e3f2fd;
+  width:450px;
+  margin-top:15%;
+  text-align:justify;
+}
+.summary_goldrush{
+  float:right;
+  padding:5px;
+  background:#e3f2fd;
+  width:450px;
+  margin-top:15%;
+  text-align:justify;
+}
+#cars{
+  padding:10px;
+  background-color:#e3f2fd;
+  width:450px;
+  margin-top:50px;
+}
+#video{
+  display:inline-block;
+  margin-top:100px;
+}
+.summary_video{
+  width:450px;
+  float:right;
+  background:#e3f2fd;
+  padding:5px;
+  margin-top:17%;
+  text-align:justify;
+}
+.zephr{
+  margin-top:90px;
+  display:inline-block;
+}
+.impulse{
+  margin-top:20px;
+  display:inline-block;
+}
+.goldrush{
+  margin-top:20px;
+  display:inline-block;
+}
+/* Race Section */
+#race-section{
+  overflow:hidden;
+  height:100vh;
+  background:#e3f2fd;
+}
+#map{
+  height:400px;
+  width:600px;
+  margin-left:100px;
+  display:inline-block;
+}
+#race-title{
+  font-size:50px;
+  font-weight:bold;
+  position:relative;
+  text-align:center;
+  margin-top:40px;
+  color:#1565c0;
+}
+#solar_car_div{
+  float:right;
+}
+#solar_car{
+  height:50px;
+}
+/* team_members-section css */
+#team_members-section{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  background:#1e88e5;
+}
+
+/* subgroups-section css*/
+#subgroups-section{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  background:rebeccapurple;
+}
+#calsol_mechanical{
+  height:250px;
+  margin-left:80px;
+}
+#calsol_electrical{
+  height:250px;
+}
+#calsol_business{
+  height:250px;
+}
+.subteam_images{
+  float:left;
+  margin-right:80px;
+}
+/* sponsers-section css */
+#sponsers-section{
+  width:100%;
+  height:100vh;
+  overflow:hidden;
+  background:#1e88e5;
+}
+.sponser-rank{
+  float:left;
+}
+.sponser{
+  height:50px;
+  float:left;
+  margin-top:150px;
+}
+#volkswagon{
+  height:180px;
+  margin-right:50px;
+  margin-left:25%;
+  float:left;
+}
+#lineartechnology{
+  padding-top:25px;
+  height:120px;
+  float:left;
+}

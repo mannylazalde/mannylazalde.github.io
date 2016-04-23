@@ -6,6 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Monda:400,700' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"> </script>
 </head>
 <body>
   <section class = "section" id = "introduction-section">
@@ -17,8 +18,8 @@
         <li class = "navigation-item" href = "#introduction-section"><a> Welcome </a> </li>
         <li class = "navigation-item" href = "#solar_car-section"><a> Solar Cars </a> </li>
         <li class = "navigation-item" href = "#race-section"><a> Race </a> </li>
-        <li class = "navigation-item" href = "#team_members-section"><a> Team Members </a> </li>
         <li class = "navigation-item" href = "#subgroups-section"><a> Subgroups </a> </li>
+        <li class = "navigation-item" href = "#team_members-section"><a> Team Members </a> </li>
         <li class = "navigation-item" href = "#sponsers-section"><a> Sponsors </a> </li>
         <a href = "https://www.facebook.com/BerkeleyCalSol/?fref=ts" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/facebook.png"> </li></a>
         <a href = "https://twitter.com/search?q=berkeley%20calsol&src=typd&lang=en" target="_blank">  <li class = "social_media">  <img id = "instagram" src = "assets/jpg/twitter.png"> </li></a>
@@ -39,7 +40,8 @@
   <div class = "carousel">
     <div class = "carousel-item"><div class ="zephr" > <img id = "zephr" src = "assets/jpg/zephr.jpg"></div>
     <div class = "summary_zephr">
-      Zephyr is CalSol's 8th-generation solar vehicle. We are working on making Zephyr the best car CalSol has ever made, even greater than Impulse!
+      Zephyr is CalSol's 8th-generation solar vehicle. We are working on making Zephyr the best car CalSol has ever made, even greater than Impulse. Right now, Zephyr is gearing up to race across America in the American
+      Solar Challenge this summer!
     </div>
     <div class = "title-text"> Zephyr </div></div>
     <div class = "carousel-item"><div class ="impulse" ><img id = "cars" src = "assets/jpg/impulse.jpg"></div>
@@ -69,7 +71,13 @@
 
 <section class = "section" id = "race-section">
   <div id = "race-title"> American Solar Challenge</div>
-  <div id = "solar_car_div"> <img id = "solar_car" src = "assets/jpg/solar_car.png"> </div>
+  <!---<div id = "solar_car_div"> <img id = "solar_car" src = "assets/jpg/solar_car.png"> </div>-->
+  <div id = "solargraphic"> <img id = "solarpic" src="assets/jpg/solargraphic.png"></div>
+  <div id = "map_summary">
+    This summer, we are participating in the American Solar Challenge. The American Solar Challenge is week long race that pits schools from across America as well as Europe against one another.
+    This year, the course starts in Ohio and finishes in South Dakato. We will be driving on
+    the normal roads (including freeways) all during normal hours.
+  </div>
   <div id ="map"> <div>
   <script>
       function initMap() {
@@ -129,19 +137,37 @@
         async defer></script>
 </section>
 
+
+<section class = "section" id = "subgroups-section">
+
+<div class= "mechanical"><img id = "calsol_mechanical" src="assets/jpg/gear.png"></div>
+<div class= "business"><img id = "calsol_business" src="assets/jpg/business.png"></div>
+<div class= "electrical"><img id = "calsol_electrical" src="assets/jpg/circuit.png"></div>
+<div class = "mechanical_summary">
+The Mechanical Team is responsible for the physical design and contstruction of the structural parts of the car. Mechanical members use 3D computer modeling tools to help design components and analyze the forces on each part. We take safety very seriously. The end result is a lightweight car which is structurally sound and capable of withstanding whatever the road throws at us.
+ </div>
+ <div class = "business_summary">
+ CalSol understands the importance and necessity of professionalism and good public relations in helping establish the team in the community. Shortly after the Formula Sun Grand Prix race in the summer of 2009, CalSol Business Team was established. The Business Team is primarily responsible for acquiring sponsorship, setting up an alumni network, and establishing publicity for CalSol.
+ </div>
+<div class = "electrical_summary">
+The Electrical Team, like its name suggests, is reponsible for all the electrical related issues and all the electronics. The electrical system contains many student-designed Printed Circuit Boards (PCB), and each circuit board is responsible for a specific task on the car - data collection, screen display, motor control, etc.
+</div>
+
+</section>
+
+
+
+
+
+
+
+
 <section class = "section" id = "team_members-section">
  <div> team_members-section</div>
  <div class= "subteam_images"><img id = "calsol_business" src="assets/jpg/Machining.jpg"></div>
 </section>
 
 
-<section class = "section" id = "subgroups-section">
-<div> subgroups-section</div>
-
-<div class= "subteam_images"><img id = "calsol_mechanical" src="assets/jpg/calsol_mechanical.jpg"></div>
-<div class= "subteam_images"><img id = "calsol_electrical" src="assets/jpg/welding.jpg"></div>
-<div class= "subteam_images"><img id = "calsol_business" src="assets/jpg/operations.jpg"></div>
-</section>
 
 
 <section class = "section" id="sponsers-section">

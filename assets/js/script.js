@@ -3,9 +3,14 @@ $(document).ready(function(){
 //old method for finding right size for image
 var height = $(window).height()
 var width = $(window).width()
-console.log(width)
 function screenadjust(){
   $('#subtitle').css("margin-top", (height/2) - 120 + "px"  );
+  $('.business').css("margin-left", (width/2) - 125 + "px" );
+  $('.business_summary').css("margin-left", (width/2) - 180 + "px" );
+  $('.business_summary').css("margin-top", height - 260 + "px" );
+  $('.business_summary').hide();
+  $('.mechanical_summary').hide();
+  $('.electrical_summary').hide();
 }
 screenadjust()
 // Slide to right
@@ -44,19 +49,20 @@ $(window).scroll(function(){
 })
 */
 
-/* This function makes the top bar get an opacity after you scroll */
+/* This function makes the top bar get an opacity after you scroll*/
 $(window).scroll(function(){
   var scrolls = $(window).scrollTop();
-  if(scrolls < 10){
+  if(scrolls < 15){
     $('.navigation').css('opacity','0.8');
   }
+/*
   else if ( (scrolls > 570) && (scrolls < 625) ){
       $('.navigation').css('opacity','0.8');
   }
   else if ( (scrolls > 1170) && (scrolls < 1245) ){
       $('.navigation').css('opacity','0.8');
   }
-  else if((scrolls > 1765) && (scrolls < 1815 )){
+  else if((scrolls > 1785) && (scrolls < 1855 )){
     $('.navigation').css('opacity','0.8');
   }
   else if((scrolls > 2340) && (scrolls < 2520)) {
@@ -65,10 +71,98 @@ $(window).scroll(function(){
   else if(scrolls > 2950) {
       $('.navigation').css('opacity','0.8');
   }
+
   else{
     $('.navigation').css('opacity','0.4');
   }
+  */
 })
+
+// Try scrolling using waypoints instead
+$('#introduction-section').waypoint(function(){
+  $('.navigation').css('opacity','0.4');
+},{offset:'-8%'})
+
+$('#solar_car-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'5%'})
+
+$('#solar_car-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'-5%'})
+
+$('#solar_car-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'10%'})
+
+$('#solar_car-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'-10%'})
+
+
+$('#race-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'5%'})
+
+$('#race-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'-5%'})
+
+$('#race-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'10%'})
+
+$('#race-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'-10%'})
+
+
+
+$('#subgroups-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'5%'})
+
+$('#subgroups-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'-5%'})
+
+$('#subgroups-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'10%'})
+
+$('#subgroups-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'-10%'})
+
+
+
+
+$('#team_members-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'5%'})
+
+$('#team_members-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'-5%'})
+
+$('#team_members-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'10%'})
+
+$('#team_members-section').waypoint(function (direction){
+$('.navigation').css('opacity','0.4');
+},{offset:'-10%'})
+
+
+
+$('#sponsers-section').waypoint(function (){
+$('.navigation').css('opacity','0.8');
+},{offset:'5%'})
+
+$('#sponsers-section').waypoint(function (){
+$('.navigation').css('opacity','0.4');
+},{offset:'10%'})
+
 // This function does scrolling
 $('.navigation-item').click(function(){
     $('html,body').animate({
@@ -76,5 +170,31 @@ $('.navigation-item').click(function(){
     },800);
     return false
   })
+//This function makes the subgroup section icons bounce
+$('.business').hover(function(){
+  $('.business').css('transform', 'translateY(-50px)');
+  $('.business_summary').fadeIn(400);
+},function(){
+  $('.business').delay(4000).css('transform', 'translateY(0px)');
+  $('.business_summary').fadeOut(400);
+})
+
+$('.mechanical').hover(function(){
+  $('.mechanical').css('transform', 'translateY(-50px)');
+  $('.mechanical').css('transform', 'rotate(55deg)');
+  $('.mechanical_summary').fadeIn(400);
+},function(){
+$('.mechanical').css('transform', 'translateY(0px)');
+$('.mechanical_summary').fadeOut(400);
+})
+
+$('.electrical').hover(function(){
+  $('.electrical').css('transform', 'translateY(-50px)');
+  $('.electrical_summary').fadeIn(400);
+},function(){
+  $('.electrical').delay(4000).css('transform', 'translateY(0px)');
+  $('.electrical_summary').fadeOut(400);
+  })
+
 
 })

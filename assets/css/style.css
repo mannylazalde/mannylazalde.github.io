@@ -222,13 +222,13 @@ color:#1565c0;
   position:absolute;
   text-align:justify;
   margin-top:250px;
-  background:white;
+  color:#e3f2fd;
   padding:10px;
 }
 #race-section{
   overflow:hidden;
   height:100vh;
-  background:#e3f2fd;
+  background:#1e88e5;
 }
 #map{
   margin-top:2%;
@@ -243,7 +243,7 @@ color:#1565c0;
   position:relative;
   text-align:center;
   margin-top:40px;
-  color:#1565c0;
+  color:#e3f2fd;
 }
 #solar_car_div{
   float:right;
@@ -277,7 +277,7 @@ color:#1565c0;
   position:absolute;
 }
 .summarybox_summary{
-  color:white;
+  color:#e3f2fd;
   font-size:15px;
   width:50%;
   margin-left:auto;
@@ -286,7 +286,7 @@ color:#1565c0;
   margin-top:5px;
 }
 .summarybox_major{
-  color:white;
+  color:#e3f2fd;
   font-style:italic;
   font-size:15px;
   width:50%;
@@ -296,7 +296,7 @@ color:#1565c0;
   margin-top:5px;
 }
 .summarybox_name{
-  color:white;
+  color:#e3f2fd;
   font-size:25px;
   font-weight:bold;
   margin-top:25px;
@@ -369,7 +369,7 @@ color:#1565c0;
     display:none;
 }
 .description{
-  color:white;
+  color:#e3f2fd;
   font-size:45px;
   font-weight:bold;
   position:absolute;
@@ -380,11 +380,11 @@ color:#1565c0;
   width:100%;
   height:100vh;
   overflow:hidden;
-  background:#26a69a;
+  background:#e3f2fd;
   /*  background:#ff8a65;*/
 }
 #subteam-image{
-  height:160px;
+  height:180px;
   border-radius:20px;
 }
 .subteam_images{
@@ -404,31 +404,37 @@ color:#1565c0;
   float:left;
   margin-left:80px;
   margin-top:8%;
+  border-radius: 60px;
 }
 .mechanical:hover{
   transition: all 1.5s;
   cursor:pointer;
   transition-timing-function: ease;
+  background-color:#1e88e5;
 }
 .business{
   text-align:center;
   position:absolute;
   margin-top:8%;
-  border-radius: 30px;
+  border-radius: 60px;
 }
 .business:hover{
   transition: all 1s;
   cursor:pointer;
+  background-color:#1e88e5;
+  transition-timing-function: ease;
 }
 .electrical{
   float:right;
   margin-right:80px;
   margin-top:8%;
-  border-radius: 30px;
+  border-radius: 60px;
 }
 .electrical:hover{
   transition: all 1s;
   cursor:pointer;
+  background-color:#1e88e5;
+  transition-timing-function: ease;
 }
 .mechanical_summary{
   float:left;
@@ -454,7 +460,7 @@ color:#1565c0;
   width:100%;
   height:100vh;
   overflow:hidden;
-  background:#1e88e5;
+  background:#e3f2fd;
 }
 .sponser-rank{
   float:left;

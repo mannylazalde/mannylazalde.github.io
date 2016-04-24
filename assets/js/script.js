@@ -26,10 +26,10 @@ function screenadjust(){
   $('#zephr').css("height",height*0.45);
   $('#impulse').css("width",width*0.37);
   $('#goldrush').css("width",width*0.34);
-  $('#summarybox_image_manny').css("height",height * 0.42);
-  $('#summarybox_image_neeka').css("height",height * 0.42);
-  $('#summarybox_image_felix').css("height",height * 0.42);
-  $('#summarybox_image_rachel').css("height",height * 0.42);
+  $('#summarybox_image_manny').css("width",width * 0.2);
+  $('#summarybox_image_neeka').css("width",width * 0.2);
+  $('#summarybox_image_felix').css("width",width * 0.2);
+  $('#summarybox_image_rachel').css("width",width * 0.2);
   $('#subteam-image_manny').css("width",width * 0.14);
   $('#subteam-image_felix').css("width",width * 0.14);
   $('#subteam-image_neeka').css("width",width* 0.14);

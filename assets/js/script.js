@@ -4,7 +4,7 @@ $(document).ready(function(){
 var height = $(window).height()
 var width = $(window).width()
 function screenadjust(){
-  $('#subtitle').css("margin-top", (height/2) - 120 + "px"  );
+  $('#subtitle').css("margin-top", (height*0.26)  );
   $('.business').css("margin-left", (width/2) - 125 + "px" );
   $('#manny-summarybox').css("margin-top", (height/2));
   $('#felix-summarybox').css("margin-top", (height/2));
@@ -19,6 +19,10 @@ function screenadjust(){
   $('.mechanical_summary').hide();
   $('.electrical_summary').hide();
   $('#solarpic').css("height",0.35 * height);
+  $('.arrow').css("height",height*0.16);
+  $('#zephr').css("height",height*0.45);
+  $('#impulse').css("width",width*0.37);
+  $('#goldrush').css("width",width*0.34);
 }
 screenadjust()
 // Slide to right

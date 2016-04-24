@@ -5,16 +5,19 @@ var height = $(window).height()
 var width = $(window).width()
 function screenadjust(){
   $('#subtitle').css("margin-top", (height*0.26)  );
-  $('.business').css("margin-left", (width/2) - 125 + "px" );
+  $('.business').css("margin-left", width*0.40 );
   $('#manny-summarybox').css("margin-top", (height/2));
   $('#felix-summarybox').css("margin-top", (height/2));
   $('#neeka-summarybox').css("margin-top", (height/2));
   $('#rachel-summarybox').css("margin-top", (height/2) );
-  $('.description').css("margin-top", (height/2) +36 + "px"  );
-  $('.description').css("margin-left", (width/2) - 380 + "px"  );
+  $('.description').css("margin-top", (height/1.75) );
+  $('.description').css("margin-left", (width/4.5)  );
   //$('#team_members-summarybox').css("margin-top", (height) - 300 + "px"  );
-  $('.business_summary').css("margin-left", (width/2) - 180 + "px" );
-  $('.business_summary').css("margin-top", height - 260 + "px" );
+  $('.business_summary').css("margin-left", width / 2.82 );
+  $('.business_summary').css("margin-top", height *0.58);
+  $('.mechanical_summary').css("margin-top", height *0.58);
+  $('.electrical_summary').css("margin-left", width / 1.45);
+  $('.electrical_summary').css("margin-top", height *0.58);
   $('.business_summary').hide();
   $('.mechanical_summary').hide();
   $('.electrical_summary').hide();
@@ -23,6 +26,22 @@ function screenadjust(){
   $('#zephr').css("height",height*0.45);
   $('#impulse').css("width",width*0.37);
   $('#goldrush').css("width",width*0.34);
+  $('#summarybox_image_manny').css("height",height * 0.42);
+  $('#summarybox_image_neeka').css("height",height * 0.42);
+  $('#summarybox_image_felix').css("height",height * 0.42);
+  $('#summarybox_image_rachel').css("height",height * 0.42);
+  $('#subteam-image_manny').css("width",width * 0.14);
+  $('#subteam-image_felix').css("width",width * 0.14);
+  $('#subteam-image_neeka').css("width",width* 0.14);
+  $('#subteam-image_rachel').css("width",width * 0.14);
+  $('#calsol_mechanical').css("width",width * 0.19);
+  $('#calsol_electrical').css("width",width *  0.19);
+  $('#calsol_business').css("width",width *  0.19);
+  $('#instagram').css('height',height*0.045);
+  $('#youtube').css('height',height*0.045);
+  $('#facebook').css('height',height*0.045);
+  $('#flickr').css('height',height*0.045);
+  $('#twitter').css('height',height*0.045);
 }
 screenadjust()
 // Slide to right
@@ -183,7 +202,7 @@ $('.navigation-item').click(function(){
     return false
   })
 //This function makes the subgroup section icons move
-$('.business').hover(function(){
+$('#calsol_business').hover(function(){
   $('.business').css('transform', 'translateY(-50px)');
   $('.business_summary').fadeIn(400);
 },function(){
@@ -191,7 +210,7 @@ $('.business').hover(function(){
   $('.business_summary').fadeOut(400);
 })
 
-$('.mechanical').hover(function(){
+$('#calsol_mechanical').hover(function(){
   $('.mechanical').css('transform', 'translateY(-50px)');
   $('.mechanical_summary').fadeIn(400);
 },function(){
@@ -199,7 +218,7 @@ $('.mechanical').css('transform', 'translateY(0px)');
 $('.mechanical_summary').fadeOut(400);
 })
 
-$('.electrical').hover(function(){
+$('#calsol_electrical').hover(function(){
   $('.electrical').css('transform', 'translateY(-50px)');
   $('.electrical_summary').fadeIn(400);
 },function(){

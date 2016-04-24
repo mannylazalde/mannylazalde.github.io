@@ -23,7 +23,7 @@ function screenadjust(){
   $('.electrical_summary').hide();
   $('#solarpic').css("height",0.35 * height);
   $('.arrow').css("height",height*0.16);
-  $('#zephr').css("height",height*0.45);
+  $('#zephr').css("width",width*0.46);
   $('#impulse').css("width",width*0.37);
   $('#goldrush').css("width",width*0.34);
   $('#summarybox_image_manny').css("width",width * 0.2);
@@ -42,8 +42,17 @@ function screenadjust(){
   $('#facebook').css('height',height*0.045);
   $('#flickr').css('height',height*0.045);
   $('#twitter').css('height',height*0.045);
+  $('.carousel-item').css('height',height - 26 +"px");
 }
 screenadjust()
+
+//new slider
+$('.my-slider').unslider({
+  autoplay:true,
+  delay:8000,
+  animation:'horizontal'
+});
+/*
 // Slide to right
 $('#carousel-next').click(function(){
     var current_margin_left = parseInt($('.carousel').css('margin-left').replace("px",""));
@@ -69,6 +78,7 @@ $('#carousel-next').click(function(){
   }
 
 })
+*/
  /*
 function parallax(){
   var scrolls = $(window).scrollTop();

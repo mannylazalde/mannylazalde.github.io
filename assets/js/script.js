@@ -6,10 +6,10 @@ var width = $(window).width()
 function screenadjust(){
   $('#subtitle').css("margin-top", (height/2) - 120 + "px"  );
   $('.business').css("margin-left", (width/2) - 125 + "px" );
-  $('#manny-summarybox').css("margin-top", (height) - 300 + "px"  );
-  $('#felix-summarybox').css("margin-top", (height) - 300 + "px"  );
-  $('#neeka-summarybox').css("margin-top", (height) - 300 + "px"  );
-  $('#rachel-summarybox').css("margin-top", (height) - 300 + "px"  );
+  $('#manny-summarybox').css("margin-top", (height/2));
+  $('#felix-summarybox').css("margin-top", (height/2));
+  $('#neeka-summarybox').css("margin-top", (height/2));
+  $('#rachel-summarybox').css("margin-top", (height/2) );
   $('.description').css("margin-top", (height/2) +36 + "px"  );
   $('.description').css("margin-left", (width/2) - 380 + "px"  );
   //$('#team_members-summarybox').css("margin-top", (height) - 300 + "px"  );
@@ -18,6 +18,7 @@ function screenadjust(){
   $('.business_summary').hide();
   $('.mechanical_summary').hide();
   $('.electrical_summary').hide();
+  $('#solarpic').css("height",0.35 * height);
 }
 screenadjust()
 // Slide to right

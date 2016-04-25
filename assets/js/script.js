@@ -42,10 +42,13 @@ function screenadjust(){
   $('#facebook').css('height',height*0.045);
   $('#flickr').css('height',height*0.045);
   $('#twitter').css('height',height*0.045);
-  $('.carousel-item').css('height',height - 50 +"px");
+  $('.carousel-item').css('height',height - 40 +"px");
 }
 screenadjust()
-
+//apply the screenadjust() on window resize
+$(window).resize(function(){
+  screenadjust();
+});
 //new slider
 $('.my-slider').unslider({
   autoplay:true,

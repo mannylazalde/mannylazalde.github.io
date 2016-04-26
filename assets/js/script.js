@@ -42,7 +42,7 @@ function screenadjust(){
   $('#facebook').css('height',height*0.045);
   $('#flickr').css('height',height*0.045);
   $('#twitter').css('height',height*0.045);
-  $('.carousel-item').css('height',height - 40 +"px");
+  $('.carousel-item').css('height',height*0.93);
 }
 screenadjust()
 //apply the screenadjust() on window resize

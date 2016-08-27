@@ -12,6 +12,17 @@
   <script src="assets/js/jquery.waypoints.min.js"> </script>
   <script src="assets/js/unslider.js"> </script>
   <script src="assets/js/jquery.mousewheel.js"></script>
+  <style type="text/css">
+    #warning-message { display: none; }
+    @media only screen and (orientation:portrait){
+        #wrapper { display:none; }
+        #warning-message { display:block; }
+    }
+    @media only screen and (orientation:landscape){
+        #warning-message { display:none; }
+    }
+    </style>
+
   <script type="text/javascript"> 	// TOUCH-EVENTS SINGLE-FINGER SWIPE-SENSING JAVASCRIPT
   	// Courtesy of PADILICIOUS.COM and MACOSXAUTOMATION.COM
 
@@ -213,6 +224,7 @@
 </head>
 
 <body>
+<div id="wrapper">
   <div class = "navigation">
     <ul>
       <li class = "navigation-item1"> Manny Lazalde </li>
@@ -340,6 +352,10 @@
   "></iframe>
   -->
   </section>
+<div/>
+<div id="warning-message">
+    This website is only viewable in landscape mode
+</div>
 </body>
 
 </html>

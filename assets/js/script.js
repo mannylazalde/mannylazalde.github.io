@@ -296,4 +296,16 @@ $('#button_calsol_website').click(function(){
   window.open("http://mannylazalde.github.io");
 });
 
+@media screen and (orientation:landscape) {
+
+#container {
+-ms-transform: rotate(-90deg); /* IE 9 */
+-webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+transform: rotate(-90deg);
+width: /* screen width */ ;
+height: /* screen height */ ;
+overflow: scroll;
+}
+}
+
 })

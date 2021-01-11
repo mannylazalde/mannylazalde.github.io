@@ -89,6 +89,7 @@ p {
   margin-bottom: 1rem;
 }
 
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -6678,6 +6679,7 @@ button.bg-dark:focus {
 
 .align-self-baseline {
   align-self: baseline !important;
+    text-align: justify;
 }
 
 .align-self-stretch {
@@ -10004,6 +10006,7 @@ hr.light {
   text-transform: uppercase;
   border: none;
   border-radius: 10rem;
+    
 }
 
 .page-section {
@@ -10075,7 +10078,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(22,22,22,0.2) 0%, rgba(22,22,22,0.6) 100%), url("../assets/img/manny_front.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10141,5 +10144,13 @@ header.masthead h1 {
 }
 
 .text-white-75 {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 1);
 }
+.image_front {
+    display:inline-block;
+    background: rgba(22,22,22,0.4);
+    padding: 5px;
+    
+}
+
+

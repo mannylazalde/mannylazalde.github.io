@@ -28,8 +28,7 @@
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">Education</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Work Experience</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Projects">Projects</a></li>
                     </ul>
                 </div>
             </div>
@@ -126,96 +125,99 @@
                 </div>
             </div>
         </section>
-        <!-- Portfolio-->
-        <div id="portfolio">
-            <div class="container-fluid p-0">
-                <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/6.jpg" alt="" />
-                            <div class="portfolio-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
+         <!-- All Projects-->  
+        <div id = 'Projects'>
+             <!-- Soccer Juggling Project-->  
+             <section class="page-section bg-dark text-white">
             <div class="container text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/theme/creative/">Download Now!</a>
+                <h2 class=" mt-0">Design Projects and Research</h2>
+                <hr class="divider my-4" />
             </div>
-        </section>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mt-0">Let's Get In Touch!</h2>
-                        <hr class="divider my-4" />
+            </section>
+            <!-- AI_ML-->    
+            <section  class="bg-grey project-section" id="AI_ML">
+                <div class="container two_column">
+                    <div class = 'column'>
+                        <img class="project_img" src="assets/img/portfolio/XRays.png"><img/>
+                    </div>
+                    <div class = 'column'>
+                        <h2 class="text-center mt-0">X-Ray Shoulder Implant Classifier</h2>
+                        <hr class="divider my-3" />
+                        <div class="center-text mb-4">
+                                <p > For my final project in my AI/ML class at Carnegie Mellon University, I created various models to classify shoulder implants by X-ray. I coded VGG-16 and ResNet Neural Networks from scratch and acheieved a 99% classification accuracy. It was a great project for learning about Deep Learning. <a href="https://github.com/mannylazalde/ShoulderImplantClassification" target="_blank" rel="noopener noreferrer">Github Link with Paper</a>   </p> 
+                        </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>(805) 404-2048</div>
+            </section>
+            <!-- Soccer Juggling Project-->     
+            <section  class="project-section" id="Soccer">
+                <div class="container two_column">
+                    <div class = 'column'>
+                        <h2 class="text-center mt-0">Soccer Juggling Counter</h2>
+                        <hr class="divider my-3" />
+                        <div class="center-text mb-4">
+                                <p > I enjoy juggling a soccer ball, but dislike counting. I created a computer vision algorithm in Python using OpenCV to detect and count consecutive soccer juggles. Check out the video below for more details!   <a href="https://github.com/mannylazalde/Soccer_Juggling_Counter" target="_blank" rel="noopener noreferrer">Github Link</a>  </p> 
+                        </div>
                     </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <!-- Make sure to change the email address in BOTH the anchor text and the link target below!-->
-                        <a class="d-block" href="mailto:mannylazalde@berkeley.edu">mannylazalde@berkeley.edu</a>
+                    <div class = 'column'>
+                        <iframe width="500em" height="300em" src="https://www.youtube.com/embed/cjtNf2Hgeao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <!-- Robotics-->    
+            <section  class="bg-grey project-section" id="Robotics">
+                
+                <div class="container two_column">
+                    <div class = 'column'>
+                        <img class="cassie_img" src="assets/img/portfolio/cassie.jpg"><img/>
+                    </div>
+                    <div class = 'column'>
+                        <h2 class="text-center mt-0">Hybrid Robotics Lab Research</h2>
+                        <hr class="divider my-3" />
+                        <div class="center-text mb-4">
+                                <p > During Fall 2019, I took Robotic Kinematics and Dynamics at Berkeley. For the final project, I teamed up with 3 people and we worked with the Hybrid Robotics Lab at UC Berkeley to develop a controller, a juggling platform, and a computer vision algorithm with ROS to juggle a ball on Cassie. Ask for more details!   </p> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Balloon Bro-->    
+            <section  class="project-section" id="Balloon_Bro">
+                <div class="container two_column">
+                    <div class = 'column'>
+                        <h2 class="text-center mt-0">Balloon Bro - Senior Capstone Project</h2>
+                        <hr class="divider my-3" />
+                        <div class="center-text mb-4">
+                                <p > In Spring 2019, I worked on my senior capstone design project. Our group of four created a balloon inflating and tying robot. All the design, machining, and coding was accomplished in a single semester. I was in charge of the pulley system, as well as the overall electronics and software.    </p> 
+                        </div>
+                    </div>
+                     <div class = 'column'>
+                        <iframe width="500em" height="280em" src="https://www.youtube.com/embed/o8Vt9hzaNFk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class = 'container text-center'>
+                        <img class="balloon_bro" src="assets/img/portfolio/balloon_bro.jpg"><img/>
+                    </div>
+            </section>
+            <!-- Shark_Skin-->    
+            <section  class="bg-grey project-section" id="Shark_Skin">
+                
+                <div class="container two_column">
+                    <div class = 'column'>
+                        <img class="shark_img" src="assets/img/portfolio/CFD.png"><img/>
+                    </div>
+                    <div class = 'column'>
+                        <h2 class="text-center mt-0">Shark Skin Biomimicry Research</h2>
+                        <hr class="divider my-3" />
+                        <div class="center-text mb-4">
+                                <p > I performed research in the Gu Lab at UC Berkeley. We explored adapting the denticles that make up shark skin for use in modern engineering applications to increase aerodynamic performance. We have performed analysis through the use of computation fluid dynamics (CFD) in ANSYS Fluent, as well as design studies in SolidWorks. We published our work in the Bioinspiration & Biomemetics journal, feel free to read it!  <a href="https://iopscience.iop.org/article/10.1088/1748-3190/ab5c85" target="_blank" rel="noopener noreferrer"> “Algorithmic-driven design of shark denticle bioinspired structures for superior aerodynamic properties”</a> </p> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+        
+        
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Start Bootstrap</div></div>

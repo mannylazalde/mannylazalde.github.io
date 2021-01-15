@@ -10010,7 +10010,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 #mainNav {
@@ -10168,4 +10168,60 @@ header.masthead h1 {
 
 .work_experience {
     padding-top: 10px
+}
+
+.center {
+    width: %100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-text {
+        margin-left: auto;
+        margin-right: auto;
+        width: 66.6%;
+    
+}
+
+.bg-grey {
+    background-color:#f7f7f7!important
+}
+
+.project-section {
+padding: 2rem 0;
+
+}
+
+.cassie_img {
+    height: auto;
+    width: 20em;
+}
+
+.two_column {
+    display:table;
+}
+
+.column {
+    display: table-cell;
+    width:auto;
+    vertical-align:middle;
+}
+
+.project_img {
+    width:auto;
+    height:30em
+}
+
+.balloon_bro {
+    width:50%; 
+    display:inline-block;
+    padding-top: 2em;
+    
+}
+
+.shark_img {
+    width:140%
 }

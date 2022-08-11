@@ -10078,10 +10078,10 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(22,22,22,0.2) 0%, rgba(22,22,22,0.6) 100%), url(/assets/img/manny_uncropped.JPG);
+  background: linear-gradient(to bottom, rgba(22,22,22,0.2) 0%, rgba(22,22,22,0.6) 100%), url(/assets/img/manny_new2.JPG);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: local;
   background-size: cover;
 }
 header.masthead h1 {
@@ -10247,3 +10247,7 @@ padding: 2rem 0;
 }
 
 
+
+.strava {
+   width: 35em 
+}

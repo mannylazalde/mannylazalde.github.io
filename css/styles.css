@@ -10078,7 +10078,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(22,22,22,0.2) 0%, rgba(22,22,22,0.6) 100%), url(/assets/img/berkeley.jpg);
+  background: linear-gradient(to bottom, rgba(22,22,22,0.2) 0%, rgba(22,22,22,0.6) 100%), url(/assets/img/manny_stable_diffusion.png);
   background-position: top;
   background-repeat: no-repeat;
   background-attachment: local;
@@ -10250,4 +10250,16 @@ padding: 2rem 0;
 
 .strava {
    width: 35em 
+}
+
+.divider {
+    
+}
+
+.gm_logo {
+    width: 20em
+}
+
+.ai {
+    width: 40em
 }
